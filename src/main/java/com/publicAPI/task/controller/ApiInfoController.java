@@ -52,7 +52,8 @@ public class ApiInfoController {
 
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
-
+    
+    // openApi를 불러와 저장하는 역할 
     @PostMapping("/saveapiinfo")
     public ResponseEntity<String> saveApiInfo(){
         HttpURLConnection urlConnection = null;

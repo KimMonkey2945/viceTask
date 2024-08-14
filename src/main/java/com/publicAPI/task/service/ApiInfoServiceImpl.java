@@ -1,9 +1,11 @@
 package com.publicAPI.task.service;
 
 import com.publicAPI.task.repository.ApiInfoRepository;
+import com.publicAPI.task.specification.ApiInfoSpecifications;
 import com.publicAPI.task.vo.ApiInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.json.simple.JSONArray;
@@ -16,6 +18,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -58,6 +61,11 @@ public class ApiInfoServiceImpl implements ApiInfoService {
             log.error("Error parsing or reading the input stream", e);
             throw new RuntimeException("Failed to parse and save API data", e);
         }
+    }
+
+    public List<ApiInfo> searchByKeyword(String keyword){
+        Specification<ApiInfo> spec = ApiInfoSpecifications.keyword(keyword);
+        return apiInfoRepository.findAll(spec);
     }
 
     // String을 LocalDateTime으로 변환
