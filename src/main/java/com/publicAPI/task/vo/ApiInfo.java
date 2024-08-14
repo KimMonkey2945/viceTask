@@ -3,23 +3,28 @@ package com.publicAPI.task.vo;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table
+@NoArgsConstructor
 public class ApiInfo {
 /*
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 */
     @Id
-    private int galContentId;
-    private int galContentTypeId;
+    private Long galContentId;
+    private Long galContentTypeId;
     private String galTitle;
     private String galWebImageUrl;
 
@@ -30,6 +35,5 @@ public class ApiInfo {
     private String galPhotographyLocation;
     private String galPhotographer;
     private String galSearchKeyword;
-    public ApiInfo() {
-    }
+
 }

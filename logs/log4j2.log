@@ -1,0 +1,22 @@
+[2024-08-14 16:08:29.994]  INFO ${sys:PID} --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.publicAPI.task.service.ApiInfoServiceImplTest]: ApiInfoServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-08-14 16:08:30.146]  INFO ${sys:PID} --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.publicAPI.task.TaskApplication for test class com.publicAPI.task.service.ApiInfoServiceImplTest
+[2024-08-14 16:08:32.434]  INFO 3812 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Starting ApiInfoServiceImplTest using Java 17.0.10 with PID 3812 (started by QuillKim in C:\Users\hvyon\Desktop\vice\task\task)
+[2024-08-14 16:08:32.437]  INFO 3812 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : No active profile set, falling back to 1 default profile: "default"
+[2024-08-14 16:08:33.417]  INFO 3812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-08-14 16:08:33.516]  INFO 3812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+[2024-08-14 16:08:34.211]  INFO 3812 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-08-14 16:08:34.307]  INFO 3812 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-08-14 16:08:34.356]  INFO 3812 --- [           main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+[2024-08-14 16:08:34.562]  INFO 3812 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-08-14 16:08:34.603]  INFO 3812 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+[2024-08-14 16:08:35.015]  INFO 3812 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62a81453
+[2024-08-14 16:08:35.017]  INFO 3812 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+[2024-08-14 16:08:35.089]  WARN 3812 --- [           main] o.h.o.deprecation                        : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2024-08-14 16:08:36.013]  INFO 3812 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-08-14 16:08:36.070]  INFO 3812 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-08-14 16:08:36.776]  WARN 3812 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-08-14 16:08:37.350]  WARN 3812 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2024-08-14 16:08:37.518]  INFO 3812 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Started ApiInfoServiceImplTest in 5.464 seconds (process running for 9.146)
+[2024-08-14 16:08:37.684]  INFO 3812 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-08-14 16:08:37.694]  INFO 3812 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+[2024-08-14 16:08:37.712]  INFO 3812 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
