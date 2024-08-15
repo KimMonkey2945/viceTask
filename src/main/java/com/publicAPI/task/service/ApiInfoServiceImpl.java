@@ -64,7 +64,12 @@ public class ApiInfoServiceImpl implements ApiInfoService {
     }
 
     public List<ApiInfo> searchByKeyword(String keyword){
-        Specification<ApiInfo> spec = ApiInfoSpecifications.keyword(keyword);
+        Specification<ApiInfo> spec = ApiInfoSpecifications.searchKeyword(keyword);
+        return apiInfoRepository.findAll(spec);
+    }
+
+    public List<ApiInfo> searchByMonthAndLocation(String month, String location){
+        Specification<ApiInfo> spec = ApiInfoSpecifications.searchMonthAndLocation(month, location);
         return apiInfoRepository.findAll(spec);
     }
 

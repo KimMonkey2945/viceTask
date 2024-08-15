@@ -8,7 +8,9 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.ByteArrayInputStream;
@@ -19,10 +21,13 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
+import lombok.extern.slf4j.Slf4j;
+
 @SpringBootTest
+@Slf4j
 public class ApiInfoServiceImplTest {
 
-    // 실제 db에 접근하는 역할이지만, 가짜객체를 사용해서 외부 의존성 제거
+/*    // 실제 db에 접근하는 역할이지만, 가짜객체를 사용해서 외부 의존성 제거
     @Mock
     private ApiInfoRepository apiInfoRepository;
     // 인스턴스를 생성하고, @Mock으로 선언된 목 객체(apiInfoRepository)를 이 인스턴스에 주입합니다.
@@ -68,19 +73,57 @@ public class ApiInfoServiceImplTest {
         apiInfoServiceImpl.saveApiInfo(inputStream);
 
         verify(apiInfoRepository, times(1)).save(any(ApiInfo.class));
-    }
+    }*/
+
+
+    //============================================================================
+
+    // 실제 db에 접근하기 위해 가짜 객체를 이용하지 않고 테스트
+    @Autowired
+    private ApiInfoRepository apiInfoRepository;
+
+    @Autowired
+    private ApiInfoServiceImpl apiInfoServiceImpl;
 
     @Test
     @DisplayName("openAPI searchByKeyword test")
     public void testSearchByKeyword(){
         String keyword = "우륵기념탑";
         List<ApiInfo> result = apiInfoServiceImpl.searchByKeyword(keyword);
-        Assertions.assertFalse(result.isEmpty(), "not be empty");
+        Assertions.assertTrue(!result.isEmpty(), "not be empty");
 
-//        boolean contatin = result.stream().anyMatch(apiInfo -> apiInfo.getGalSearchKeyword().equals(keyword));
-//        Assertions.assertTrue(contatin, "contatin keyword");
+        log.info("keyword : {}" , keyword);
+        for(ApiInfo apiInfo : result){
+            log.info("result :  ContentId= {}, ContentTypeId= {}, Title= {}" +
+                    ", PhotographyMonth= {}, PhotographyLocation= {}",
+                    apiInfo.getGalContentId(),
+                    apiInfo.getGalContentId(),
+                    apiInfo.getGalTitle(),
+                    apiInfo.getGalPhotographyMonth(),
+                    apiInfo.getGalPhotographyLocation()
+                    );
+        }
+    }
 
+    @Test
+    @DisplayName("openAPI searchByKeyword test")
+    public void testSearchByMonthAndLocation(){
+        String month = "201004";
+        String location = "북한";
 
+        List<ApiInfo> result = apiInfoServiceImpl.searchByMonthAndLocation(month, location);
+        Assertions.assertTrue(!result.isEmpty(), "not be empty");
+        log.info("month : {}, location : {}", month, location);
+        for(ApiInfo apiInfo : result){
+            log.info("result :  ContentId= {}, ContentTypeId= {}, Title= {}" +
+                            ", PhotographyMonth= {}, PhotographyLocation= {}",
+                    apiInfo.getGalContentId(),
+                    apiInfo.getGalContentId(),
+                    apiInfo.getGalTitle(),
+                    apiInfo.getGalPhotographyMonth(),
+                    apiInfo.getGalPhotographyLocation()
+            );
+        }
     }
 
 
