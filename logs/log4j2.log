@@ -1,23 +1,14 @@
-[2024-08-15 13:17:05.723]  INFO ${sys:PID} --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.publicAPI.task.service.ApiInfoServiceImplTest]: ApiInfoServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2024-08-15 13:17:05.829]  INFO ${sys:PID} --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.publicAPI.task.TaskApplication for test class com.publicAPI.task.service.ApiInfoServiceImplTest
-[2024-08-15 13:17:06.237]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Starting ApiInfoServiceImplTest using Java 17.0.10 with PID 20560 (started by QuillKim in C:\Users\hvyon\Desktop\vice\task\task)
-[2024-08-15 13:17:06.242]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : No active profile set, falling back to 1 default profile: "default"
-[2024-08-15 13:17:07.004]  INFO 20560 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2024-08-15 13:17:07.119]  INFO 20560 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
-[2024-08-15 13:17:07.703]  INFO 20560 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
-[2024-08-15 13:17:07.776]  INFO 20560 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.5.2.Final
-[2024-08-15 13:17:07.826]  INFO 20560 --- [           main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
-[2024-08-15 13:17:08.309]  INFO 20560 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-[2024-08-15 13:17:08.338]  INFO 20560 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-[2024-08-15 13:17:08.604]  INFO 20560 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@83e635f
-[2024-08-15 13:17:08.605]  INFO 20560 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-[2024-08-15 13:17:08.660]  WARN 20560 --- [           main] o.h.o.deprecation                        : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-[2024-08-15 13:17:09.511]  INFO 20560 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[2024-08-15 13:17:09.548]  INFO 20560 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2024-08-15 13:17:10.233]  WARN 20560 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2024-08-15 13:17:10.806]  WARN 20560 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-[2024-08-15 13:17:10.936]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Started ApiInfoServiceImplTest in 4.956 seconds (process running for 6.444)
-[2024-08-15 13:17:11.541] DEBUG 20560 --- [           main] o.h.SQL                                  : 
+[2024-08-15 16:55:00.045]  INFO 65124 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-08-15 16:55:00.078]  INFO 65124 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+[2024-08-15 16:55:00.343]  INFO 65124 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@691eb389
+[2024-08-15 16:55:00.345]  INFO 65124 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+[2024-08-15 16:55:00.396]  WARN 65124 --- [           main] o.h.o.deprecation                        : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2024-08-15 16:55:01.117]  INFO 65124 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-08-15 16:55:01.154]  INFO 65124 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-08-15 16:55:01.810]  WARN 65124 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-08-15 16:55:02.339]  WARN 65124 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2024-08-15 16:55:02.475]  INFO 65124 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Started ApiInfoServiceImplTest in 4.496 seconds (process running for 7.141)
+[2024-08-15 16:55:02.758] DEBUG 65124 --- [           main] o.h.SQL                                  : 
     /* <criteria> */ select
         ai1_0.gal_content_id,
         ai1_0.gal_content_type_id,
@@ -34,59 +25,29 @@
     where
         ai1_0.gal_photography_month>=? 
         and ai1_0.gal_photography_location like ? escape ''
-[2024-08-15 13:17:11.568]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : month : 201004, location : 서울
-[2024-08-15 13:17:11.568]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1002619, ContentTypeId= 1002619, Title= 경복궁 꽃담, PhotographyMonth= 201004, PhotographyLocation= 서울
-[2024-08-15 13:17:11.569]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1006314, ContentTypeId= 1006314, Title= 민화 체험관광, PhotographyMonth= 201004, PhotographyLocation= 서울
-[2024-08-15 13:17:11.569]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1078734, ContentTypeId= 1078734, Title= 부암동 카페거리, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.569]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1078901, ContentTypeId= 1078901, Title= 커피프린스1호점, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1078964, ContentTypeId= 1078964, Title= 플랫274_팥빙수, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1078978, ContentTypeId= 1078978, Title= 플랫274_스파게티, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1078993, ContentTypeId= 1078993, Title= 플랫274_떡볶이, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1079021, ContentTypeId= 1079021, Title= 플랫274, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1079048, ContentTypeId= 1079048, Title= 쇼트케이크, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1079103, ContentTypeId= 1079103, Title= 쇼트케이크_컵케이크, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.570]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1079124, ContentTypeId= 1079124, Title= 환기미술관, PhotographyMonth= 201007, PhotographyLocation= 서울
-[2024-08-15 13:17:11.571]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1105582, ContentTypeId= 1105582, Title= 광화문 광장, PhotographyMonth= 201009, PhotographyLocation= 서울
-[2024-08-15 13:17:11.571]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1105586, ContentTypeId= 1105586, Title= 세종문화회관, PhotographyMonth= 201009, PhotographyLocation= 서울
-[2024-08-15 13:17:11.571]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1122745, ContentTypeId= 1122745, Title= 서울 하얏트호텔, PhotographyMonth= 201010, PhotographyLocation= 서울
-[2024-08-15 13:17:11.572]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1134167, ContentTypeId= 1134167, Title= 북한산, PhotographyMonth= 201011, PhotographyLocation= 서울
-[2024-08-15 13:17:11.572]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1134267, ContentTypeId= 1134267, Title= 북한산 둘레길, PhotographyMonth= 201011, PhotographyLocation= 서울
-[2024-08-15 13:17:11.572]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1134321, ContentTypeId= 1134321, Title= 화계사, PhotographyMonth= 201011, PhotographyLocation= 서울
-[2024-08-15 13:17:11.573]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1136898, ContentTypeId= 1136898, Title= VOOK'S (북카페), PhotographyMonth= 201010, PhotographyLocation= 서울
-[2024-08-15 13:17:11.573]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1154307, ContentTypeId= 1154307, Title= 깍두기, PhotographyMonth= 201012, PhotographyLocation= 서울
-[2024-08-15 13:17:11.573]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1154309, ContentTypeId= 1154309, Title= 석박지, PhotographyMonth= 201012, PhotographyLocation= 서울
-[2024-08-15 13:17:11.573]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1154544, ContentTypeId= 1154544, Title= 보쌈김치, PhotographyMonth= 201012, PhotographyLocation= 서울
-[2024-08-15 13:17:11.574]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1199627, ContentTypeId= 1199627, Title= 서울광장 스케이트장, PhotographyMonth= 201012, PhotographyLocation= 서울
-[2024-08-15 13:17:11.574]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1231493, ContentTypeId= 1231493, Title= 꼭두박물관, PhotographyMonth= 201103, PhotographyLocation= 서울
-[2024-08-15 13:17:11.574]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1245007, ContentTypeId= 1245007, Title= TIC한류관, PhotographyMonth= 201103, PhotographyLocation= 서울
-[2024-08-15 13:17:11.574]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1247557, ContentTypeId= 1247557, Title= 트롱프뢰유뮤지엄, PhotographyMonth= 201101, PhotographyLocation= 서울
-[2024-08-15 13:17:11.574]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1258415, ContentTypeId= 1258415, Title= 2011 서울모터쇼, PhotographyMonth= 201104, PhotographyLocation= 서울
-[2024-08-15 13:17:11.574]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1276595, ContentTypeId= 1276595, Title= 북촌문화센터, PhotographyMonth= 201104, PhotographyLocation= 서울
-[2024-08-15 13:17:11.575]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1282349, ContentTypeId= 1282349, Title= 엿, PhotographyMonth= 201104, PhotographyLocation= 서울
-[2024-08-15 13:17:11.575]  INFO 20560 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : result :  ContentId= 1303587, ContentTypeId= 1303587, Title= 플로팅아일랜드, PhotographyMonth= 201105, PhotographyLocation= 서울
-[2024-08-15 13:17:11.591]  INFO 20560 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-[2024-08-15 13:17:11.592]  INFO 20560 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
-[2024-08-15 13:17:11.602]  INFO 20560 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
-[2024-08-15 13:17:36.159]  INFO ${sys:PID} --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.publicAPI.task.service.ApiInfoServiceImplTest]: ApiInfoServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-[2024-08-15 13:17:36.263]  INFO ${sys:PID} --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.publicAPI.task.TaskApplication for test class com.publicAPI.task.service.ApiInfoServiceImplTest
-[2024-08-15 13:17:36.711]  INFO 43692 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Starting ApiInfoServiceImplTest using Java 17.0.10 with PID 43692 (started by QuillKim in C:\Users\hvyon\Desktop\vice\task\task)
-[2024-08-15 13:17:36.713]  INFO 43692 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : No active profile set, falling back to 1 default profile: "default"
-[2024-08-15 13:17:37.450]  INFO 43692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[2024-08-15 13:17:37.556]  INFO 43692 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
-[2024-08-15 13:17:38.057]  INFO 43692 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
-[2024-08-15 13:17:38.110]  INFO 43692 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.5.2.Final
-[2024-08-15 13:17:38.154]  INFO 43692 --- [           main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
-[2024-08-15 13:17:38.666]  INFO 43692 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-[2024-08-15 13:17:38.695]  INFO 43692 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-[2024-08-15 13:17:38.958]  INFO 43692 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ee581db
-[2024-08-15 13:17:38.960]  INFO 43692 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-[2024-08-15 13:17:39.014]  WARN 43692 --- [           main] o.h.o.deprecation                        : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-[2024-08-15 13:17:39.859]  INFO 43692 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[2024-08-15 13:17:39.896]  INFO 43692 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-[2024-08-15 13:17:40.501]  WARN 43692 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[2024-08-15 13:17:41.173]  WARN 43692 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-[2024-08-15 13:17:41.385]  INFO 43692 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Started ApiInfoServiceImplTest in 4.945 seconds (process running for 6.503)
-[2024-08-15 13:17:42.278] DEBUG 43692 --- [           main] o.h.SQL                                  : 
+[2024-08-15 16:55:02.789]  INFO 65124 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-08-15 16:55:02.791]  INFO 65124 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+[2024-08-15 16:55:02.799]  INFO 65124 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+[2024-08-15 16:55:44.113]  INFO ${sys:PID} --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.publicAPI.task.service.ApiInfoServiceImplTest]: ApiInfoServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-08-15 16:55:44.221]  INFO ${sys:PID} --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.publicAPI.task.TaskApplication for test class com.publicAPI.task.service.ApiInfoServiceImplTest
+[2024-08-15 16:55:45.951]  INFO 62680 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Starting ApiInfoServiceImplTest using Java 17.0.10 with PID 62680 (started by QuillKim in C:\Users\hvyon\Desktop\vice\task\task)
+[2024-08-15 16:55:45.955]  INFO 62680 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : No active profile set, falling back to 1 default profile: "default"
+[2024-08-15 16:55:46.817]  INFO 62680 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-08-15 16:55:46.922]  INFO 62680 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+[2024-08-15 16:55:47.411]  INFO 62680 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-08-15 16:55:47.481]  INFO 62680 --- [           main] o.h.Version                              : HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-08-15 16:55:47.523]  INFO 62680 --- [           main] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+[2024-08-15 16:55:47.663]  INFO 62680 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-08-15 16:55:47.693]  INFO 62680 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+[2024-08-15 16:55:47.963]  INFO 62680 --- [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5feff876
+[2024-08-15 16:55:47.965]  INFO 62680 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+[2024-08-15 16:55:48.027]  WARN 62680 --- [           main] o.h.o.deprecation                        : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2024-08-15 16:55:48.821]  INFO 62680 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-08-15 16:55:48.862]  INFO 62680 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-08-15 16:55:49.576]  WARN 62680 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-08-15 16:55:50.126]  WARN 62680 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[2024-08-15 16:55:50.294]  INFO 62680 --- [           main] c.p.t.s.ApiInfoServiceImplTest           : Started ApiInfoServiceImplTest in 4.693 seconds (process running for 7.324)
+[2024-08-15 16:55:50.552] DEBUG 62680 --- [           main] o.h.SQL                                  : 
     /* <criteria> */ select
         ai1_0.gal_content_id,
         ai1_0.gal_content_type_id,
@@ -103,6 +64,6 @@
     where
         ai1_0.gal_photography_month>=? 
         and ai1_0.gal_photography_location like ? escape ''
-[2024-08-15 13:17:42.333]  INFO 43692 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-[2024-08-15 13:17:42.337]  INFO 43692 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
-[2024-08-15 13:17:42.354]  INFO 43692 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+[2024-08-15 16:55:50.588]  INFO 62680 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-08-15 16:55:50.590]  INFO 62680 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+[2024-08-15 16:55:50.602]  INFO 62680 --- [ionShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

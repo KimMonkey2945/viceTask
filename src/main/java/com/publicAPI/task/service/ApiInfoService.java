@@ -1,6 +1,6 @@
 package com.publicAPI.task.service;
 
-import com.publicAPI.task.vo.ApiInfo;
+import com.publicAPI.task.entity.ApiInfo;
 
 import java.io.InputStream;
 import java.util.List;

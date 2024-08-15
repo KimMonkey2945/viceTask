@@ -1,6 +1,6 @@
 package com.publicAPI.task.specification;
 
-import com.publicAPI.task.vo.ApiInfo;
+import com.publicAPI.task.entity.ApiInfo;
 import org.springframework.data.jpa.domain.Specification;
 import jakarta.persistence.criteria.Predicate;
 
@@ -15,11 +15,9 @@ public class ApiInfoSpecifications {
         return (root, query, criteriaBuilder) ->{
             Predicate monthPredicate = criteriaBuilder.greaterThanOrEqualTo(root.get("galPhotographyMonth"), photographyMonth);
             Predicate locationPredicate = criteriaBuilder.like(root.get("galPhotographyLocation"), photographyLocation);
-
             return criteriaBuilder.and(monthPredicate, locationPredicate);
         };
 
     }
-
 
 }

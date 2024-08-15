@@ -1,4 +1,4 @@
-package com.publicAPI.task.vo;
+package com.publicAPI.task.entity;
 
 
 import jakarta.persistence.*;
@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
-@Table
 @NoArgsConstructor
 public class ApiInfo {
 /*
